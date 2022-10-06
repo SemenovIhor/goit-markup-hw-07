@@ -45,8 +45,11 @@
     margin-bottom: 9px;
 }
 
-.footer .footer-item:last-child {
-    margin-bottom: 0px;
+.footer .footer-item {
+
+    &:last-child 
+    {margin-bottom: 0px;
+    }
 }
 
 
@@ -99,12 +102,14 @@
 
 }
 
-.contact-team-footer:hover,
-.contact-team-footer:focus {
+.contact-team-footer {
+
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
     fill: var(--primary-white-color);
-
+    }
 }
 
 

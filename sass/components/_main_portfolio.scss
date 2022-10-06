@@ -43,14 +43,18 @@
 
 
 
-.main-portfolio-button:hover,
-.main-portfolio-button:focus {
-    color: var(--primary-white-color);
+.main-portfolio-button {
+    
+    &:hover,
+    &:focus {
+        color: var(--primary-white-color);
+            
+        background-color: var(--accent-color);
+            
+        cursor: pointer;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 
-    background-color: var(--accent-color);
-
-    cursor: pointer;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .main-portfolio-title {
@@ -91,19 +95,30 @@
 }
 
 .pages:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
 
 }
 
 
-.pages:nth-child(3n) {
-    margin-right: 0px;
+.pages {
+
+    &:nth-child(3n) {
+        margin-right: 0px;
+    }
+
 }
 
-.pages:nth-last-child(-n+3) {
-    margin-bottom: 0px;
+.pages {
+
+    &:nth-last-child(-n+3) {
+        margin-bottom: 0px;
+    }
+
 }
 
 .portfolio-img {
@@ -114,7 +129,11 @@
 
 
 .portfolio-img:hover .overlay {
-    transform: translatey(0);
+    
+    &:hover .overlay {
+        transform: translatey(0);
+    }
+
 }
 
 .main-portfolio-content {

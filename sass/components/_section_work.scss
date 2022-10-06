@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 }
 
-.section_title {
+.section__title {
     margin: 0px;
     color: var(--title-text-color);
 
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.work_items {
+.work__items {
     display: flex;
     justify-content: space-between;
     padding-left: 0px;
@@ -22,15 +22,15 @@
 
 }
 
-.work .section_title {
+.work .section__title {
     margin-bottom: 50px;
 }
 
-.work_item {
+.work__item {
     position: relative;
 }
 
-.section-work_text {
+.section-work__text {
     position: absolute;
     bottom: 0px;
 

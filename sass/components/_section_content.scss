@@ -7,7 +7,7 @@
     padding-bottom: 47px;
 }
 
-.content_title {
+.content__title {
     margin-top: 0px;
     margin-bottom: 10px;
 
@@ -22,7 +22,7 @@
 
 
 
-.content_block .content_items {
+.content__block .content__items {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -32,14 +32,14 @@
 }
 
 
-.content_text {
+.content__text {
     padding: 0px;
     margin: 0px;
 }
 
 
 
-.content_icon {
+.content__icon {
     display: flex;
     justify-content: center;
     align-items: center;

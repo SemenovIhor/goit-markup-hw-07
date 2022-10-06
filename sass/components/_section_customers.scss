@@ -3,14 +3,14 @@
     padding-bottom: 94px;
 }
 
-.list.customers_items {
+.list.customers__items {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.customers_icon {
+.customers__icon {
 
     fill: #AFB1B8;
     display: flex;
@@ -30,11 +30,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers_icon:hover,
-.customers_icon:focus {
-    fill: var(--accent-color);
-    cursor: pointer;
-    border-color: var(--accent-color);
-
-    fill: var(--accent-color);
+.customers__icon {
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        cursor: pointer;
+        border-color: var(--accent-color);
+            
+        fill: var(--accent-color);
+    }
 }

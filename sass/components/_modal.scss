@@ -51,8 +51,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-close:hover {
-    fill: var(--accent-color);
+.modal-btn-close {
+    &:hover {
+        fill: var(--accent-color);
+    }
 
 }
 
@@ -95,13 +97,16 @@
 }
 
 
-.modal-input:focus+.label-icon {
-
-    fill: var(--accent-color);
+.modal-input {
+    &:focus+.label-icon {
+        fill: var(--accent-color);
+    }
 }
 
-.modal-input:focus {
-    border-color: var(--accent-color);
+.modal-input {
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .modal-form-title {
@@ -173,8 +178,10 @@
 }
 
 
-.checkbox:checked+.agreement-icon .agreement-icon-check {
-    opacity: 1;
+.checkbox{
+    &:checked+.agreement-icon .agreement-icon-check {
+        opacity: 1;
+    }
 }
 
 .checkbox.is-hidden {

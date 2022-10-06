@@ -18,17 +18,20 @@
 
 }
 
-.current::after {
+.current {
+    &::after{
     content: "";
     position: absolute;
     width: 100%;
     height: 4px;
-
+    
     right: 0px;
     bottom: -32px;
-
+    
     background-color: var(--accent-color);
     border-radius: 2px;
+    }
+
 }
 
 
@@ -97,13 +100,15 @@
     padding: 0px;
 }
 
-.header-pagination-item:hover {
+.header-pagination-item {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
+    }
+
 }
 
-.header-pagination-item:focus {
-    color: var(--accent-color);
-}
+
 
 
 /* 1.2. header-contacts */
@@ -133,17 +138,17 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-item:hover {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-
-
-
+.header-contacts-item {
+    &:hover {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
-.header-contacts-item:focus {
-    color: var(--accent-color);
-
+.header-contacts-item {
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .header-contacts {
@@ -155,8 +160,11 @@
     fill: currentColor;
 }
 
-.contact-icon:hover {
-    fill: var(--accent-color);
+.contact-icon {
+    &:hover {
+        fill: var(--accent-color);
+    }
+    
 
 }
 
