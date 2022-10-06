@@ -765,7 +765,7 @@ ul {
   overflow: hidden;
 }
 
-.portfolio-img:hover .overlay:hover .overlay {
+.portfolio-img:hover .overlay {
   -webkit-transform: translatey(0);
           transform: translatey(0);
 }
